@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Info Card</string>
+    <string name="full_name">Ali Abdallah</string>
+    <string name="job_title">Software Developer</string>
 </resources>
