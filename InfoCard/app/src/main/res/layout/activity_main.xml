@@ -17,5 +17,9 @@
         <include layout="@layout/header"/>
 
         <include layout="@layout/contact_information"/>
+
+        <include layout="@layout/education"/>
+
+        <include layout="@layout/work_experience"/>
     </LinearLayout>
 </ScrollView>

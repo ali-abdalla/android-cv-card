@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#EEF1F6"
-        android:text="Contact Information"
+        android:text="Education"
         android:paddingTop="8dp"
         android:paddingBottom="8dp"
         android:paddingLeft="20dp"
@@ -24,10 +24,10 @@
         android:paddingBottom="10dp">
 
         <TextView
-            android:id="@+id/email_text_view"
+            android:id="@+id/degree_text_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Email"
+            android:text="Degree"
             android:textAppearance="?android:textAppearanceSmall"
             android:textStyle="bold"
             android:paddingLeft="22dp"
@@ -36,8 +36,8 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/email_text_view"
-            android:text="aliabdallah93@gmail.com"
+            android:layout_below="@id/degree_text_view"
+            android:text="Bachelor's of Computer Science"
             android:textAppearance="?android:textAppearanceSmall"
             android:paddingLeft="22dp"
             android:textColor="#505050"/>
@@ -53,10 +53,10 @@
         android:paddingBottom="10dp">
 
         <TextView
-            android:id="@+id/mobile_text_view"
+            android:id="@+id/university_text_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Mobile"
+            android:text="University"
             android:textAppearance="?android:textAppearanceSmall"
             android:textStyle="bold"
             android:paddingLeft="22dp"
@@ -65,11 +65,12 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/mobile_text_view"
-            android:text="(+20) 01081339304"
+            android:layout_below="@id/university_text_view"
+            android:text="Helwan University"
             android:textAppearance="?android:textAppearanceSmall"
             android:paddingLeft="22dp"
             android:textColor="#505050"/>
 
     </RelativeLayout>
+
 </LinearLayout>

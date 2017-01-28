@@ -12,42 +12,31 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
-        final String facebookUrl = "http://www.fb.com/AliAbdallahAwad";
-        final String githubUrl = "http://www.github.com/ali-abdalla";
-        final String linkedinUrl = "http://www.linkedin.com/in/AliAbdallahAwad";
+        String facebookUrl = "http://www.fb.com/AliAbdallahAwad";
+        String githubUrl = "http://www.github.com/ali-abdalla";
+        String linkedinUrl = "http://www.linkedin.com/in/AliAbdallahAwad";
+        String codeforcesUrl = "http://www.codeforces.com/profile/AliAbdallah";
+        String nextechnologyUrl = "http://www.nextechnology.me";
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ImageView facebookImage = (ImageView)findViewById(R.id.facebook_image);
-        facebookImage.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Intent intent = new Intent();
-                intent.setAction(Intent.ACTION_VIEW);
-                intent.addCategory(Intent.CATEGORY_BROWSABLE);
-                intent.setData(Uri.parse(facebookUrl));
-                startActivity(intent);
-            }
-        });
+        imageHandler(R.id.facebook_image, facebookUrl);
+        imageHandler(R.id.github_image, githubUrl);
+        imageHandler(R.id.linkedin_image, linkedinUrl);
+        imageHandler(R.id.codeforces_image, codeforcesUrl);
+        imageHandler(R.id.nextechnology_image, nextechnologyUrl);
+    }
 
-        ImageView githubImage = (ImageView)findViewById(R.id.github_image);
-        githubImage.setOnClickListener(new View.OnClickListener() {
+    private void imageHandler(int imgId, String linkUrl) {
+        ImageView img = (ImageView)findViewById(imgId);
+        final String url = linkUrl;
+        img.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent intent = new Intent();
                 intent.setAction(Intent.ACTION_VIEW);
                 intent.addCategory(Intent.CATEGORY_BROWSABLE);
-                intent.setData(Uri.parse(githubUrl));
-                startActivity(intent);
-            }
-        });
-
-        ImageView linkedinImage = (ImageView)findViewById(R.id.linkedin_image);
-        linkedinImage.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Intent intent = new Intent();
-                intent.setAction(Intent.ACTION_VIEW);
-                intent.addCategory(Intent.CATEGORY_BROWSABLE);
-                intent.setData(Uri.parse(linkedinUrl));
+                intent.setData(Uri.parse(url));
                 startActivity(intent);
             }
         });
